@@ -31,7 +31,7 @@ app.get("/events", (req, res) => {
 })
 
 app.get("/curriculum/IntroToLaw", (req, res) => {
-  res.render("introToLaw")
+  res.render("IntroToLaw")
 })
 
 app.get("/curriculum/Future", (req, res) => {
