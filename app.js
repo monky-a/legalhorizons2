@@ -1,5 +1,6 @@
-const express = require("express");
-const bodyparser = require("body-parser");
+import express from "express"
+import bodyparser from "body-parser"
+import ITLcontent from "./content.js";
 const app = express();
 
 app.set("view engine", "ejs");
@@ -31,19 +32,19 @@ app.get("/events", (req, res) => {
 })
 
 app.get("/curriculum/IntroToLaw", (req, res) => {
-  res.render("IntroToLaw")
+  res.render("IntroToLaw", {content: ITLcontent});
 })
 
 app.get("/curriculum/Future", (req, res) => {
-  res.render("Future")
+  res.render("Future", {content: ITLcontent})
 })
 
 app.get("/curriculum/MockTrial", (req, res) => {
-  res.render("MockTrial")
+  res.render("MockTrial", {content: ITLcontent})
 })
 
 app.get("/curriculum/ReccResources", (req, res) => {
-  res.render("ReccResources")
+  res.render("ReccResources", {content: ITLcontent})
 })
 
 app.listen(8080, () => {

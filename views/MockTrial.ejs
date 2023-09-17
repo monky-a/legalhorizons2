@@ -24,76 +24,20 @@
 									</ul>
 		
 									<div class="grid-items blog-section masonry-style lightbox preload">
-										<article class="item column three" data-groups='["CS"]'>
-											<a href="#">
-												<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span
-														class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-												<div class="blog-excerpt">
-													<div class="blog-excerpt-inner">
-														<h5 class="meta-post">Relax, Hobbies</h5>
-														<h2>How I spend my time</h2>
-														<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-															aliqua.</p>
-													</div><!-- blog-excerpt-inner -->
-												</div><!-- blog-excerpt -->
-											</a>
-										</article>
-										<article class="item column three" data-groups='["CSY"]'>
-											<a href="#">
-												<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span
-														class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-												<div class="blog-excerpt">
-													<div class="blog-excerpt-inner">
-														<h5 class="meta-post">Relax, Hobbies</h5>
-														<h2>How I spend my time</h2>
-														<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-															aliqua.</p>
-													</div><!-- blog-excerpt-inner -->
-												</div><!-- blog-excerpt -->
-											</a>
-										</article>
-										<article class="item column three" data-groups='["CS"]'>
-											<a href="#">
-												<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span
-														class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-												<div class="blog-excerpt">
-													<div class="blog-excerpt-inner">
-														<h5 class="meta-post">Relax, Hobbies</h5>
-														<h2>How I spend my time</h2>
-														<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-															aliqua.</p>
-													</div><!-- blog-excerpt-inner -->
-												</div><!-- blog-excerpt -->
-											</a>
-										</article>
-										<article class="item column three" data-groups='["CSY"]'>
-											<a href="#">
-												<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span
-														class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-												<div class="blog-excerpt">
-													<div class="blog-excerpt-inner">
-														<h5 class="meta-post">Holidays</h5>
-														<h2>Snow &amp; silence</h2>
-														<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-															aliqua.</p>
+										<% content.forEach((item) => { %>
+											<article class="item column three" data-groups=<%= item.tag %>>
+												<a href=<%= item.link %>>
+													<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span
+															class="blog-overlay"><i class="fa-regular fa-file-lines"></i></span></figure>
+													<div class="blog-excerpt">
+														<div class="blog-excerpt-inner">
+															<h5 class="meta-post"><%= item.tagFF%></h5>
+															<h2><%= item.title %></h2>
+														</div><!-- blog-excerpt-inner -->
 													</div><!-- blog-excerpt -->
-												</div><!-- blog-excerpt-inner -->
-											</a>
-										</article>
-										<article class="item column three" data-groups='["CS"]'>
-											<a href="#">
-												<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span
-														class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-												<div class="blog-excerpt">
-													<div class="blog-excerpt-inner">
-														<h5 class="meta-post">Relax, Hobbies</h5>
-														<h2>How I spend my time</h2>
-														<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-															aliqua.</p>
-													</div><!-- blog-excerpt-inner -->
-												</div><!-- blog-excerpt -->
-											</a>
-										</article>
+												</a>
+											</article>
+									<%  }); %> 
 		
 										<div class="shuffle-sizer three"></div>
 									</div>
