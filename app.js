@@ -1,6 +1,6 @@
 import express from "express"
 import bodyparser from "body-parser"
-import ITLcontent from "./content.js";
+import { ITLcontent, futureContent, MTcontent, reccResources } from "./content.js";
 const app = express();
 
 app.set("view engine", "ejs");
@@ -36,15 +36,15 @@ app.get("/curriculum/IntroToLaw", (req, res) => {
 })
 
 app.get("/curriculum/Future", (req, res) => {
-  res.render("Future", {content: ITLcontent})
+  res.render("Future", {content: futureContent})
 })
 
 app.get("/curriculum/MockTrial", (req, res) => {
-  res.render("MockTrial", {content: ITLcontent})
+  res.render("MockTrial", {content: MTcontent})
 })
 
 app.get("/curriculum/ReccResources", (req, res) => {
-  res.render("ReccResources", {content: ITLcontent})
+  res.render("ReccResources", {content: reccResources})
 })
 
 app.listen(8080, () => {

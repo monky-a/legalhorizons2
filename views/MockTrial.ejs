@@ -19,14 +19,14 @@
 							<div id="main" class="row" style="margin-bottom: 10px;">
 								<div style="background-color: #332219;" class="row-content buffer clear-after">
 									<ul class="inline cats filter-options">
-										<li data-group="CS">Mock Trial Case</li>
-										<li data-group="CSY">Practice Guide</li>
+										<li data-group="MT">Mock Trial Case</li>
+										<li data-group="PG">Practice Guide</li>
 									</ul>
 		
 									<div class="grid-items blog-section masonry-style lightbox preload">
 										<% content.forEach((item) => { %>
 											<article class="item column three" data-groups=<%= item.tag %>>
-												<a href=<%= item.link %>>
+												<a target="__blank" rel="noreferrer noopener" href=<%= item.link %>>
 													<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span
 															class="blog-overlay"><i class="fa-regular fa-file-lines"></i></span></figure>
 													<div class="blog-excerpt">

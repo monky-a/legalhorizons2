@@ -404,10 +404,11 @@
 }
 
 .ma-color3 {
-    background-color: #E4D393 ;
+    background-color: #ffcd76 !important;
 }
+
 /*----------------------------------------------------------------
-    General Rules
+    General rules
 ----------------------------------------------------------------*/
 
 ::selection {
