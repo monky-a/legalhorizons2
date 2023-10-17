@@ -396,11 +396,13 @@
 }
 
 .ma-color {
-    background-color: #C69A83 !important;
+    background-color: white !important;
 }
 
 .ma-color2 {
-    background-color: #d3c1a1 !important;
+    background-color: #332219 !important;
+    
+    color: white;
 }
 
 .ma-color3 {
@@ -461,7 +463,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #222;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.34;
     text-rendering: auto; /* Android browser */
