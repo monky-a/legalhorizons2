@@ -2163,7 +2163,7 @@ section.greyish {
 .percent,
 .count-number,
 .count-number-done {
-    color: #666;
+    color: white;
     font-weight: 700;
     font-size: 2.333em;
     font-family: 'Montserrat', sans-serif;
@@ -2225,7 +2225,7 @@ section.greyish {
 
 .count-subject {
     margin-top: 0;
-    color: #999;
+    color: white;
     opacity: 0;
 }
 
