@@ -3,6 +3,7 @@ const ITLcontent = [
     tag: '["CS"]',
     tagFF: "Case Study",
     link: "https://docs.google.com/document/d/1lO0aw0hhY-zCH3hQ5nDPFmxZj2qCVAaYwNaFbWY3B9w/edit?usp=drive_link",
+    linkk: "https://docs.google.com/viewer?url=&embedded=true",
     title: "Gideon vs Wainwright",
   },
   {
